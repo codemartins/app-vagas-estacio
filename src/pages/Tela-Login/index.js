@@ -4,23 +4,14 @@ import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity} from 'react
 
 export default function App() {
 
-  const [nome, setNome] = useState('');
-  const [cpf, setCPF] = useState('');
-  const [celular, setCelular] = useState('');
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
 
-const cadastro = () => {
+const acessar = () => {
   alert(senha);
   alert(email);
-  alert(celular);
-  alert(cpf);
-  alert(nome);
 }
 
-const acessar = () => {
-  
-}
   return (
     <View style={styles.container}>
         <StatusBar hidden />
@@ -29,7 +20,7 @@ const acessar = () => {
 
     <Text style={styles.TextLogin}>Faça já o seu Login e veja as vagas para o seu perfil profissional.</Text>
 
-    <TextInput placeholder="E-mail:" style={styles.TextInput} onChangeText={text=>setLogin(text)} />
+    <TextInput placeholder="E-mail:" style={styles.TextInput} onChangeText={text=>setEmail(text)} />
     <TextInput secureTextEntry={true} placeholder="Senha:" style={styles.TextInput} onChangeText={text=>setSenha(text)} />
 
 
@@ -58,14 +49,7 @@ const styles = StyleSheet.create({
     marginBottom: 10
   },
 
-  btnCadastro:{
-    width: '50%',
-    height: 40,
-    backgroundColor:'#05c7fc',
-    borderRadius: 20,
-    justifyContent: 'center',
-    marginBottom: 10
-  },
+  
 
   btnAcesso:{
     width: '50%',

@@ -4,18 +4,8 @@ import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity} from 'react
 
 export default function App() {
 
-  const [nome, setNome] = useState('');
-  const [cpf, setCPF] = useState('');
-  const [celular, setCelular] = useState('');
-  const [email, setEmail] = useState('');
-  const [senha, setSenha] = useState('');
-
 const cadastro = () => {
-  alert(senha);
-  alert(email);
-  alert(celular);
-  alert(cpf);
-  alert(nome);
+  
 }
 
 const acessar = () => {

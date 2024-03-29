@@ -40,7 +40,7 @@ const cadastro = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#01497c  ',
+    backgroundColor: '#01497c',
     alignItems: 'center',
     justifyContent: 'center',
     padding: 20
