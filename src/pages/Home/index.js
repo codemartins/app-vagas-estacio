@@ -27,6 +27,9 @@ const acessar = () => {
     <TouchableOpacity style={styles.btnAcesso} onPress={(acessar)}>
       <Text style={{color: 'white', textAlign: 'center'}}>Acessar</Text>
     </TouchableOpacity>
+
+    <Text style={{color: 'white', textAlign: 'center', marginBottom: 10, top: 150}}>Powered by</Text>
+    <Image style={{width: 150, height: 38, top: 150}} source={require('./assets/logo-estacio.png')} />
     </View>
   );
 }
