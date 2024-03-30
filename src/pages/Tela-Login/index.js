@@ -1,35 +1,35 @@
 import { StatusBar } from 'expo-status-bar';
 import React, {useState} from 'react';
-import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity} from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
 
 export default function App() {
 
-  const [email, setEmail] = useState('');
-  const [senha, setSenha] = useState('');
-
-const acessar = () => {
-  alert(senha);
-  alert(email);
+const cadastro = () => {
+  
 }
 
+const acessar = () => {
+  
+}
   return (
     <View style={styles.container}>
-        <StatusBar hidden />
+        <StatusBar style='auto' />
 
     <Image style={{width:200,height:200}} source={require('./assets/logo-iJob2.png')} />
 
-    <Text style={styles.TextLogin}>Faça já o seu Login e veja as vagas para o seu perfil profissional.</Text>
+    <Text style={styles.TextLogin}>Cadastre-se e faça Login agora mesmo e fique por dentro das principais vagas.</Text>
 
-    <TextInput placeholder="E-mail:" style={styles.TextInput} onChangeText={text=>setEmail(text)} />
-    <TextInput secureTextEntry={true} placeholder="Senha:" style={styles.TextInput} onChangeText={text=>setSenha(text)} />
-
+   
+    <TouchableOpacity style={styles.btnCadastro} onPress={(cadastro)}>
+      <Text style={{color: '#05c7fc', textAlign: 'center'}}>Cadastre-se</Text>
+    </TouchableOpacity>
 
     <TouchableOpacity style={styles.btnAcesso} onPress={(acessar)}>
       <Text style={{color: 'white', textAlign: 'center'}}>Acessar</Text>
     </TouchableOpacity>
 
-    <Text style={{color: 'white', textAlign: 'center', marginBottom: 50, top: 154}}>Powered by</Text>
-    <Image style={{width: 150, height: 38, top: 104}} source={require('./assets/logo-estacio.png')} />
+    <Text style={{color: 'white', textAlign: 'center', marginBottom: 50, top: 178}}>Powered by</Text>
+    <Image style={{width: 150, height: 38, top: 128}} source={require('./assets/logo-estacio.png')} />
     </View>
   );
 }
@@ -43,16 +43,14 @@ const styles = StyleSheet.create({
     padding: 20
   },
 
-  TextInput:{
-    width:'100%',
+  btnCadastro:{
+    width: '50%',
     height: 40,
-    backgroundColor: 'white',
+    backgroundColor:'#fff',
     borderRadius: 20,
-    paddingLeft: 10,
+    justifyContent: 'center',
     marginBottom: 10
   },
-
-  
 
   btnAcesso:{
     width: '50%',
@@ -62,12 +60,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     marginBottom: 10,
   },
- 
+
   TextLogin:{
     width: '80%',
     height: 60,
     color: 'white',
     justifyContent: 'center',
-    marginBottom: 15
+    marginBottom: 15,
+    justifyContent: 'center',
+    textAlign: 'center'
   }
 });

@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React, {useState} from 'react';
 import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity} from 'react-native';
 
-export default function App() {
+export default function Cadastro() {
 
   const [nome, setNome] = useState('');
   const [cpf, setCPF] = useState('');
