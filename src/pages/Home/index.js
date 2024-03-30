@@ -13,9 +13,9 @@ const acessar = () => {
 }
   return (
     <View style={styles.container}>
-        <StatusBar hidden />
+        <StatusBar style='auto' />
 
-    <Image style={{width:200,height:200}} source={require('./assets/logo-vaga-emprego.png')} />
+    <Image style={{width:200,height:200}} source={require('./assets/logo-iJob2.png')} />
 
     <Text style={styles.TextLogin}>Cadastre-se e faça Login agora mesmo e fique por dentro das principais vagas.</Text>
 
@@ -28,8 +28,8 @@ const acessar = () => {
       <Text style={{color: 'white', textAlign: 'center'}}>Acessar</Text>
     </TouchableOpacity>
 
-    <Text style={{color: 'white', textAlign: 'center', marginBottom: 10, top: 150}}>Powered by</Text>
-    <Image style={{width: 150, height: 38, top: 150}} source={require('./assets/logo-estacio.png')} />
+    <Text style={{color: 'white', textAlign: 'center', marginBottom: 50, top: 178}}>Powered by</Text>
+    <Image style={{width: 150, height: 38, top: 128}} source={require('./assets/logo-estacio.png')} />
     </View>
   );
 }

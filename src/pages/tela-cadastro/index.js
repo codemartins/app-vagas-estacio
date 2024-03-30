@@ -20,9 +20,9 @@ const cadastro = () => {
 
   return (
     <View style={styles.container}>
-        <StatusBar hidden />
+        <StatusBar style='auto' />
 
-    <Image style={{width:200,height:200}} source={require('./assets/logo-vaga-emprego.png')} />
+    <Image style={{width:200,height:200}} source={require('./assets/logo-iJob2.png')} />
 
     <TextInput placeholder="Nome Completo:" style={styles.TextInput} onChangeText={text=>setNome(text)} />
     <TextInput placeholder="CPF:" style={styles.TextInput} onChangeText={text=>setCPF(text)} />
@@ -33,6 +33,9 @@ const cadastro = () => {
     <TouchableOpacity style={styles.btnCadastro} onPress={(cadastro)}>
       <Text style={{color: 'white', textAlign: 'center'}}>Cadastrar</Text>
     </TouchableOpacity>
+
+    <Text style={{color: 'white', textAlign: 'center', marginBottom: 50, top: 120}}>Powered by</Text>
+    <Image style={{width: 150, height: 38, top: 70}} source={require('./assets/logo-estacio.png')} />
     </View>
   );
 }

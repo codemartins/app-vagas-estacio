@@ -16,7 +16,7 @@ const acessar = () => {
     <View style={styles.container}>
         <StatusBar hidden />
 
-    <Image style={{width:200,height:200}} source={require('./assets/logo-vaga-emprego.png')} />
+    <Image style={{width:200,height:200}} source={require('./assets/logo-iJob2.png')} />
 
     <Text style={styles.TextLogin}>Faça já o seu Login e veja as vagas para o seu perfil profissional.</Text>
 
@@ -27,6 +27,9 @@ const acessar = () => {
     <TouchableOpacity style={styles.btnAcesso} onPress={(acessar)}>
       <Text style={{color: 'white', textAlign: 'center'}}>Acessar</Text>
     </TouchableOpacity>
+
+    <Text style={{color: 'white', textAlign: 'center', marginBottom: 50, top: 154}}>Powered by</Text>
+    <Image style={{width: 150, height: 38, top: 104}} source={require('./assets/logo-estacio.png')} />
     </View>
   );
 }
