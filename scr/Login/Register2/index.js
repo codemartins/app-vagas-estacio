@@ -11,7 +11,7 @@ export default function Register2() {
   return(
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.headerText}>Bem vindo(a)</Text>
+        <Text style={styles.headerText}>Bem-vindo(a)</Text>
       </View>
 
       <Animatable.View style={styles.containerForm} animation='fadeInUp'>

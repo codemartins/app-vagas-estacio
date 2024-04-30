@@ -7,7 +7,7 @@ import * as Animatable from 'react-native-animatable';
 //Segunda tela de login (aluno/nao aluno)
 export default function Welcome2() {
   const navigation = useNavigation();
-
+  
   return(
     <View style={styles.container}>
       
@@ -20,7 +20,7 @@ export default function Welcome2() {
       </View>
 
       <Animatable.View style={styles.containerForm} animation='fadeInUp'>
-        <Text style={styles.containerTitle}> Voce é...</Text>
+        <Text style={styles.containerTitle}> Você é...</Text>
         
         <TouchableOpacity style={styles.containerButton} onPress={ () => navigation.navigate('Register')}>
           <Text style={styles.buttonText}> Aluno </Text>
